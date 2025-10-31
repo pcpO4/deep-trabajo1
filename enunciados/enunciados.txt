@@ -1,0 +1,45 @@
+--Practica0--
+
+Construir un Perceptron con una capa oculta desde cero, sin utilizar ningún espacio de trabajo (framework) o paquete especializado (p.ej. sklearn) para ello. La implementación debería ser versátil y suficientemente parametrizable para realizar distintos experimentos de manera sencilla. Como referencia se puede utilizar este código.
+
+Comprueba que el funcionamiento es correcto creando un modelo y entrenándolo para clasificar correctamente la función XOR, ajustando de forma adecuada los distintos parámetros. ¿Cuál es la configuración más adecuada para conseguir una clasificación correcta?
+
+Añade una funcionalidad adicional para poder monitorizar el entrenamiento del modelo, calculando en cada iteración el error. Estos valores se puede ir mostrando o graficando durante el entrenamiento.
+
+Construye un nuevo modelo para aproximar la función con los datos de entrenamiento adjuntos. Es posible que haya que realizar algunos cambios en el código anterior, ya que ahora estamos tratando un problema de regresión.
+
+Comprueba el comportamiento del modelo utilizando los datos de test adjuntos. ¿Cuál es la configuración más adecuada para conseguir un buen ajuste de la función?
+
+data_test.parquet data_test.parquet
+data_train.parquet data_train.parquet
+
+--Practica1--
+Estudiar el rendimiento de los distintos algoritmos de aprendizaje (optimizers) en el siguiente ejemplo. Visualiza los resultados comparativos de forma gráfica y numérica, utilizando distintas configuraciones para hacer un estudio más exhaustivo. ¿Qué algoritmo obtiene el mejor rendimiento para ese conjunto de datos?
+
+Realizar una evaluación detallada de los modelos propuestos, calculando exactitud (accuracy), número de errores, matriz de confusión tanto en el conjunto de entrenamiento como de test, además del tiempo invertido en el entrenamiento.
+--Practica2--
+
+Estudiar el comportamiento de los distintos parámetros de entrenamiento del modelo de la práctica anterior y cómo influyen en los resultados finales. ¿Cómo afecta cada uno de los siguiente parámetros al modelo?
+
+Número de neuronas de la capa oculta
+Número de épocas
+Función objetivo o de pérdida (loss)
+Tamaño de lote (batch size)
+Tasa de aprendizaje (learning rate)
+Porcentaje de validación
+Realizar los cambios pertinentes para que el modelo clasifique correctamente entre números pares e impares. También se puede modificar la arquitectura del modelo añadiendo alguna capa adicional (Dense y/o Dropout) si fuera necesario. ¿Cuál es la mejor configuración para conseguir una clasificación óptima?
+
+--Practica3--
+
+Crear una red convolucional simple (CNN) para clasificar el conjunto de datos (MNIST) utilizado en las prácticas anteriores. Probar distintas arquitecturas (combinando las capas vistas en clase) y configuraciones, comparando el rendimiento y resultados de las distintas CNNs propuestas.
+
+--Practica4--
+Crear un nuevo modelo usando (transfer learning) alguno de los modelos pre-entrenados vistos en clase de base para clasificar el conjunto de datos (MNIST) utilizado en las prácticas anteriores. Puede utilizar el siguiente cuaderno como referencia. Comparar los resultados con los modelos anteriores.
+
+NOTA: Los modelos pre-entrenados de Tensorflow se encuentran en tf.keras.application y los de PyTorch en torchvision.models
+--Practica5--
+
+Utiliza el siguiente cuaderno (archivo simpleGAN.ipynb)  como plantilla y añade el código necesario para realizar las siguientes tareas:
+
+Visualizar en una gráfica la evolución de los errores del discriminador y generador en el entrenamiento
+Calcular las métricas del modelo
